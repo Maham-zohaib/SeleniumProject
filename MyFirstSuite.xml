@@ -1,0 +1,67 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="LoginModule" >
+
+	<test name="LoginTESTon Chrome">
+		<parameter name="BrowserName" value="chrome"></parameter>
+		<classes>
+			<class name="testcasesNG.Login_TestCases">
+			<methods>
+					<exclude name="VerifyLoginErrorMsg01"></exclude>
+					<exclude name="VerifyLoginErrorMsg02"></exclude>
+					<exclude name="RememberMe"> </exclude>
+					<exclude name="ForgetPassword_A"> </exclude>
+					<exclude name="ForgetPassword_B"> </exclude>
+			</methods>
+			</class>
+			
+			
+			<class name="testcasesNG.UserMenu_TestCasses">
+			<methods>
+				
+				<exclude name="SelectUserMenu"></exclude>
+					<exclude name="MyProfile_01"></exclude>
+				<exclude name="MyProfile_02"></exclude>
+				<exclude name="MyProfile_03"></exclude>
+				<exclude name="MySettings_01"></exclude>
+				<exclude name="MySettings_02"></exclude>
+				<exclude name="MySettings_03"></exclude>
+				<exclude name="MySettings_04"></exclude>
+				<exclude name="DeveloperConsole"></exclude>
+				<exclude name="Logout"></exclude>
+			</methods>
+			</class>
+			
+			<class name="testcasesNG.UserAccount_TestCases">
+			<methods>
+			<exclude name="CreatAccount"></exclude>
+			<exclude name="CreatNewView"></exclude>
+			<exclude name="MergeAccount"></exclude>
+			<exclude name="AccountReport"></exclude>
+			
+			</methods>
+			</class>
+			
+			<class name="testcasesNG.Opportunities_TeseCases">
+			<methods>
+			<exclude name="OpportunitiesLink"></exclude>
+			<exclude name="CreateNewOppo"></exclude>
+			<exclude name="OppoetunityPipelineReport"></exclude>
+			<exclude name="StuckOppoReportLink"></exclude>
+			<exclude name="QuarterlySummaryReport"></exclude>
+			</methods>
+			</class>
+			
+			
+			<class name="testcasesNG.LeadTab_TestCases">
+			<methods>
+			<include name="LeadTab"></include>
+			<include name="LeadTab_02"></include>
+			<include name="LeadTab_03"></include>
+			<include name="LeadTab_04"></include>
+			</methods>
+			</class>
+			
+			</classes>
+			</test>
+</suite>
+

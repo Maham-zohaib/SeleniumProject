@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [LoginModule]" guice-stage="DEVELOPMENT">
+  <test name="LoginTESTon Chrome(failed)">
+    <parameter name="BrowserName" value="chrome"/>
+    <classes>
+      <class name="testcasesNG.Login_TestCases">
+        <methods>
+          <include name="Setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcasesNG.Login_TestCases -->
+      <class name="testcasesNG.LeadTab_TestCases">
+        <methods>
+          <include name="CloseReport"/>
+          <include name="LeadTab_03" invocation-numbers="0"/>
+          <include name="CreateReport"/>
+        </methods>
+      </class> <!-- testcasesNG.LeadTab_TestCases -->
+    </classes>
+  </test> <!-- LoginTESTon Chrome(failed) -->
+</suite> <!-- Failed suite [LoginModule] -->
